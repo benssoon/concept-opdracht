@@ -1,0 +1,89 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --color-primary-purple: #5722CD;
+    --color-secondary-blue: #4845E4;
+    --color-button-pink: #ED4385;
+    --color-text-black: #0C0C0C; /* Default text */
+    /* Exceptions */
+    --color-text-bg-light-purple: #F2F0FF; /* For large floating text */
+    --color-bg-light-grey: #F3F6F9; /* Background for projects */
+    --color-text-secondary-grey: #7A7A7A; /* For text on purple background */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+// <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+/*----- Font for headings -----*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Meriweather", serif;
+}
+
+
+
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
