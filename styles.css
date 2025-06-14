@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -36,7 +38,6 @@ body {
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*
 // <weight>: Use a value from 300 to 900
@@ -66,7 +67,8 @@ body {
 
 /*----- Font for headings -----*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Meriweather", serif;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
 }
 
 
@@ -75,14 +77,65 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
-
 /* --------------- 3.1 Reusables ----------------------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.button {
+    background-color: var(--color-button-pink);
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    max-width: 200px;
+    font-size: 9px;
+    padding: 16px 32px;
+}
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header * {
+    color: var(--color-text-bg-light-purple);
+
+}
+
+header {
+    background:
+            /* squiggle */
+            center bottom/2em no-repeat url("assets/squiggle_line_stripe.svg"),
+            /* background color gradient */
+            linear-gradient(var(--color-primary-purple), var(--color-secondary-blue));
+    padding-bottom: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    flex-grow: 1;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 2em;
+}
+
+.hero {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.mission {
+}
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
