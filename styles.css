@@ -31,7 +31,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 6px;
+    gap: 3em;
 }
 
 body {
@@ -73,31 +74,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 10em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 9em;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 8em;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 7em;
 }
 
 h5 {
-    font-size: 2em;
+    font-size: 6em;
 }
 
 h6 {
-    font-size: 2em;
+    font-size: 5em;
 }
 
-p {
-    font-size: 2.5em;
+p, li, a {
+    font-size: 4rem;
 }
 
 
@@ -111,7 +112,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 700px;
+    max-width: 200em;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -121,16 +122,16 @@ p {
 }
 
 .padding {
-    padding: 60em 0;
+    padding: 22em 0;
 }
 
 .button {
     background-color: var(--color-button-pink);
-    border-radius: 2em;
+    border-radius: 3em;
     text-decoration: none;
     text-transform: uppercase;
-    max-width: 200px;
-    font-size: 4em;
+    max-width: 16em;
+    font-size: 3em;
     padding: 1em 1em;
 }
 
@@ -160,17 +161,21 @@ header {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    gap: 2em;
+
 }
 
 .hero {
-    gap: 1em;
+
 }
 
 /* --------------- 4.2 Introduction ------------------- */
 main {
     display: flex;
     flex-direction: column;
+}
+
+.mission {
+
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
