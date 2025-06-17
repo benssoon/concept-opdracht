@@ -104,16 +104,13 @@ h6 {
 }
 
 p, li, a, form * {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
 
 a {
     text-decoration: none;
-}
-
-p a {
     color: var(--color-primary-purple);
 }
 
@@ -192,10 +189,6 @@ main {
     flex-basis: 100em;
 }
 
-.mission {
-    justify-content: ;
-}
-
 /* --------------- 4.3 Case Studies ------------------- */
 #case-studies {
     display: flex;
@@ -203,18 +196,40 @@ main {
     align-items: center;
     background-color: var(--color-bg-light-grey);
     padding: 1em 2em;
+    flex-basis: 240em;
+    gap: 20em;
 }
 
 .project {
     display: flex;
+    gap: 30em;
+    flex-basis: 100em;
+    flex-grow: 1;
+    width: 100%;
+    padding: 4em 10em;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    flex-basis: 60em;
-    margin-right: 20em;
+    justify-content: space-between;
+    flex-basis: 100em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 40em 0;
+    max-width: 80em;
+
+}
+
+.description > a {
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 0.2em;
 }
 
 .squiggle {
@@ -226,7 +241,9 @@ img {
 }
 
 .image-wrapper {
-    flex-basis: 80em;
+    flex-basis: 400em;
+    flex-grow: 3;
+    max-width: 200em;
 }
 
 /* --------------- 4.4 Services ------------------- */
