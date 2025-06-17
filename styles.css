@@ -28,7 +28,7 @@
 
     --bg-squiggle: center bottom/12em no-repeat url("assets/squiggle_line_stripe.svg");
     /* header and contact background color w/ gradient */
-    --bg-color: linear-gradient(var(--color-primary-purple), var(--color-secondary-blue));
+    --bg-color: linear-gradient(var(--color-secondary-blue), var(--color-primary-purple));
 
 }
 
@@ -122,7 +122,7 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 170em;
+    max-width: 160em;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -178,10 +178,7 @@ header {
 }
 
 /* --------------- 4.2 Introduction ------------------- */
-main {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .mission {
 
