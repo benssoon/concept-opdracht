@@ -8,7 +8,7 @@
 </head>
 <body>
     <!---------- HEADER ---------->
-    <header>
+    <header class="">
 
         <!---- nav ---->
         <nav>
@@ -21,8 +21,8 @@
 
 
         <!---- hero ---->
-        <div class="container text-center padding hero">
-            <h1>Your website is an investment in the success of your business.</h1>
+        <div class="container text-center hero">
+            <h1 class="">Your website is an investment in the success of your business.</h1>
             <h4>We are here to help you succeed.</h4>
             <a class="button" href="#contact">Let's work together</a>
         </div>
@@ -30,12 +30,14 @@
     </header>
 
     <!---------- MAIN ---------->
-    <main>
-        <section class="container text-center padding mission">
-            <h3 >Rekupe is a digital agency in Los Angeles.</h3>
-            <h3 >We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</h3>
-            <h3 >We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.</h3>
-            <p >Have a question? <a href="/">Click here</a> to contact us!</p>
+    <main class="">
+        <section class="container text-center intro">
+            <span class="container mission">
+                <h3>Rekupe is a digital agency in Los Angeles.</h3>
+                <h3 >We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</h3>
+                <h3 >We see every project as a fresh opportunity, pushing ourselves to create new digital experiences.</h3>
+            </span>
+            <p><strong>Have a question? <a href="/">Click here</a> to contact us!</strong></p> <!-- Made it strong because finding the contact form is most important. And makes it visually stronger. -->
         </section>
         <section class="projects">
 
@@ -61,7 +63,7 @@
 
                     <span class="input">
                         <label for="message">Message</label>
-                        <input id="message" placeholder="Message" />
+                        <textarea id="message" placeholder="Message"></textarea>
                     </span>
 
                     <button type="submit" id="send" class="button">send</button>

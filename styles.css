@@ -38,7 +38,6 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 6px;
-    gap: 5em;
 }
 
 body {
@@ -83,11 +82,12 @@ h1 {
 }
 
 h2 {
-    font-size: 9rem;
+    font-size: 10rem;
 }
 
 h3 {
     font-size: 6rem;
+    color: var(--color-primary-purple);
 }
 
 h4 {
@@ -108,7 +108,7 @@ p, li, form * {
     font-weight: 300;
 }
 
-a {
+a, strong {
     font-size: 1em;
 }
 
@@ -122,9 +122,10 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 160em;
+    max-width: 169em;
     margin: 0 auto;
     padding: 0 1rem;
+    gap: 5em;
 }
 
 .text-center {
@@ -178,10 +179,18 @@ header {
 }
 
 /* --------------- 4.2 Introduction ------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+}
 
+.intro {
+    justify-content: space-evenly;
+    flex-basis: 100em;
+}
 
 .mission {
-
+    justify-content: ;
 }
 
 /* --------------- 4.3 Projects ------------------- */
@@ -189,10 +198,6 @@ header {
 /* --------------- 4.4 Services ------------------- */
 
 /* --------------- 4.5 Contact ------------------- */
-.outside {
-
-}
-
 #contact {
     background: var(--bg-color);
 
@@ -202,39 +207,30 @@ form {
     width: 100%;
 }
 
-form > div {
-    background-color: yellow;
-    margin: 1em;
-    text-align: center;
-    line-height: 7em;
-    font-size: 3em;
-    color: black;
-}
-
 .input {
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: 0;
-    align-items: stretch;
 }
 
-input {
-    /*padding: 0 10em 0 1em;*/
+input, textarea {
+    font-family: inherit;
+    font-weight: 500;
+    padding-left: 1em;
+    color: black !important;
 }
 
 .input > label {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #name, #email {
     flex-basis: 3em;
-    flex-grow: 5;
-
 }
 
 #message {
-
+    padding-top: 1em;
+    flex-basis: 10em;
 }
 
 
@@ -257,7 +253,11 @@ footer {
     background-color: var(--color-text-black);
     color: white;
     text-align: center;
-    padding: 4em;
+    padding: 5em;
+}
+
+footer > p {
+    font-size: 2.5rem;
 }
 
 
