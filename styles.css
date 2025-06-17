@@ -28,7 +28,7 @@
 
     --bg-squiggle: center bottom/12em no-repeat url("assets/squiggle_line_stripe.svg");
     /* header and contact background color w/ gradient */
-    --bg-color: linear-gradient(var(--color-primary-purple), var(--color-secondary-blue));
+    --bg-color: linear-gradient(var(--color-secondary-blue), var(--color-primary-purple));
 
 }
 
@@ -122,8 +122,7 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 170em;
+    max-width: 160em;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -145,6 +144,7 @@ a {
     padding: 1.5em 2.5em;
     font-size: 3em;
     font-weight: 500;
+    align-self: center;
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -178,10 +178,7 @@ header {
 }
 
 /* --------------- 4.2 Introduction ------------------- */
-main {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .mission {
 
@@ -192,8 +189,26 @@ main {
 /* --------------- 4.4 Services ------------------- */
 
 /* --------------- 4.5 Contact ------------------- */
+.outside {
+
+}
+
 #contact {
     background: var(--bg-color);
+
+}
+
+form {
+    width: 100%;
+}
+
+form > div {
+    background-color: yellow;
+    margin: 1em;
+    text-align: center;
+    line-height: 7em;
+    font-size: 3em;
+    color: black;
 }
 
 .input {
@@ -221,6 +236,21 @@ input {
 #message {
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------- 4.6 Footer ------------------- */
 footer {
