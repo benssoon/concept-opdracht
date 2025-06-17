@@ -103,7 +103,7 @@ h6 {
     font-size: 5rem;
 }
 
-p, li {
+p, li, form * {
     font-size: 4rem;
     font-weight: 300;
 }
@@ -141,6 +141,7 @@ a {
     border-radius: 3em;
     text-decoration: none;
     text-transform: uppercase;
+    min-width: 40rem;
     padding: 1.5em 2.5em;
     font-size: 3em;
     font-weight: 500;
@@ -164,12 +165,11 @@ header {
 }
 
 .nav {
-    padding: 1em 8em 1em 0;
+    padding: 6em 8em 1em 0;
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     gap: 10em;
-    padding-top: 6em;
 }
 
 .hero {
@@ -196,10 +196,38 @@ main {
     background: var(--bg-color);
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0;
+    align-items: stretch;
+}
+
+input {
+    /*padding: 0 10em 0 1em;*/
+}
+
+.input > label {
+    font-weight: 500;
+}
+
+#name, #email {
+    flex-basis: 3em;
+    flex-grow: 5;
+
+}
+
+#message {
+
+}
+
 /* --------------- 4.6 Footer ------------------- */
 footer {
     background-color: var(--color-text-black);
-    color: var(--color-text-secondary-grey
+    color: white;
+    text-align: center;
+    padding: 4em;
 }
 
 
