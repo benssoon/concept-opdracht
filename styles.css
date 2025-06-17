@@ -122,7 +122,6 @@ a {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 170em;
     margin: 0 auto;
     padding: 0 1rem;
@@ -145,6 +144,7 @@ a {
     padding: 1.5em 2.5em;
     font-size: 3em;
     font-weight: 500;
+    align-self: center;
 }
 
 /* --------------- 3.2 Other --------------------------- */
@@ -198,6 +198,20 @@ main {
 
 #contact {
     background: var(--bg-color);
+
+}
+
+form {
+    width: 100%;
+}
+
+form > div {
+    background-color: yellow;
+    margin: 1em;
+    text-align: center;
+    line-height: 7em;
+    font-size: 3em;
+    color: black;
 }
 
 .input {
@@ -225,6 +239,21 @@ input {
 #message {
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------- 4.6 Footer ------------------- */
 footer {
