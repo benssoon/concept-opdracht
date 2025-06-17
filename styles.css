@@ -28,7 +28,7 @@
 
     --bg-squiggle: center bottom/12em no-repeat url("assets/squiggle_line_stripe.svg");
     /* header and contact background color w/ gradient */
-    --bg-color: linear-gradient(var(--color-secondary-blue), var(--color-primary-purple));
+    --bg-color: linear-gradient(90deg, var(--color-secondary-blue), var(--color-primary-purple));
 
 }
 
@@ -82,7 +82,7 @@ h1 {
 }
 
 h2 {
-    font-size: 10rem;
+    font-size: 6rem;
 }
 
 h3 {
@@ -103,16 +103,19 @@ h6 {
     font-size: 5rem;
 }
 
-p, li, form * {
-    font-size: 4rem;
-    font-weight: 300;
-}
-
-a, strong {
-    font-size: 1em;
+p, li, a, form * {
+    font-size: 3rem;
+    font-weight: 400;
 }
 
 
+a {
+    text-decoration: none;
+}
+
+p a {
+    color: var(--color-primary-purple);
+}
 
 
 
@@ -193,14 +196,44 @@ main {
     justify-content: ;
 }
 
-/* --------------- 4.3 Projects ------------------- */
+/* --------------- 4.3 Case Studies ------------------- */
+#case-studies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg-light-grey);
+    padding: 1em 2em;
+}
+
+.project {
+    display: flex;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 60em;
+    margin-right: 20em;
+}
+
+.squiggle {
+    width: 10em;
+}
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 80em;
+}
 
 /* --------------- 4.4 Services ------------------- */
 
 /* --------------- 4.5 Contact ------------------- */
 #contact {
     background: var(--bg-color);
-
 }
 
 form {
