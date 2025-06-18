@@ -1,0 +1,20 @@
+/* Borders and other handy developer tricks. */
+.dev1 {
+    border: dashed 8px black;
+}
+
+.dev2 {
+    border: dashed 6px greenyellow;
+}
+
+.dev3 {
+    border: dashed 6px lightpink;
+}
+
+.dev4 {
+    border: dashed 4px mediumvioletred;
+}
+
+.dev5 {
+    border: dashed 2px cadetblue;
+}

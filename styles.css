@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --color-primary-purple: #5722CD;
+    --color-secondary-blue: #4845E4;
+    --color-button-pink: #ED4385;
+    --color-text-black: #0C0C0C; /* Default text */
+    /* Exceptions */
+    --color-text-bg-light-purple: #F2F0FF; /* For large floating text */
+    --color-bg-light-grey: #F3F6F9; /* Background for projects */
+    --color-text-secondary-grey: #7A7A7A; /* For text on purple background */
+
+
+    --bg-squiggle: center bottom/12em no-repeat url("assets/squiggle_line_stripe.svg");
+    /* header and contact background color w/ gradient */
+    --bg-color: linear-gradient(90deg, var(--color-secondary-blue), var(--color-primary-purple));
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 6px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+/*
+// <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+*/
+
+/*----- Font for headings -----*/
+h1, h2, h3, h5, h6 {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    font-size: 9rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 6rem;
+    color: var(--color-primary-purple);
+}
+
+h4 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 8rem;
+}
+
+h6 {
+    font-size: 5rem;
+}
+
+p, li, a, form * {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-primary-purple);
+}
+
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 169em;
+    margin: 0 auto;
+    padding: 0 1rem;
+    gap: 5em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding {
+    padding: 16em 0;
+}
+
+.button {
+    background-color: var(--color-button-pink);
+    border-radius: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 40rem;
+    padding: 1.5em 2.5em;
+    font-size: 3em;
+    font-weight: 500;
+    align-self: center;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+header *, #contact * {
+    color: var(--color-text-bg-light-purple);
+
+}
+
+header {
+    background: var(--bg-squiggle), var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20em;
+}
+
+.nav {
+    padding: 6em 8em 1em 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 10em;
+}
+
+.hero {
+    padding-top: 10em;
+    padding-bottom: 20em;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    justify-content: space-evenly;
+    flex-basis: 100em;
+}
+
+/* --------------- 4.3 Case Studies ------------------- */
+#case-studies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-bg-light-grey);
+    padding: 1em 2em;
+    flex-basis: 240em;
+    gap: 20em;
+}
+
+.project {
+    align-items: center;
+    display: flex;
+    gap: 30em;
+    flex-basis: 100em;
+    flex-grow: 1;
+    width: 100%;
+    padding: 4em 10em;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100em;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 40em 0;
+    max-width: 80em;
+
+}
+
+.description > a {
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+.squiggle {
+    width: 10em;
+}
+
+img {
+    width: 100%;
+}
+
+.image-wrapper {
+    min-width: 100em;
+    flex-basis: 400em;
+    flex-grow: 3;
+    max-width: 200em;
+}
+
+/* --------------- 4.4 Services ------------------- */
+
+/* --------------- 4.5 Contact ------------------- */
+#contact {
+    background: var(--bg-color);
+}
+
+form {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+input, textarea {
+    font-family: inherit;
+    font-weight: 500;
+    padding-left: 1em;
+    color: black !important;
+}
+
+.input > label {
+    font-weight: 700;
+}
+
+#name, #email {
+    flex-basis: 3em;
+}
+
+#message {
+    padding-top: 1em;
+    flex-basis: 10em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- 4.6 Footer ------------------- */
+footer {
+    background-color: var(--color-text-black);
+    color: white;
+    text-align: center;
+    padding: 5em;
+}
+
+footer > p {
+    font-size: 2.5rem;
+}
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
