@@ -201,6 +201,7 @@ main {
 }
 
 .project {
+    align-items: center;
     display: flex;
     gap: 30em;
     flex-basis: 100em;
@@ -241,6 +242,7 @@ img {
 }
 
 .image-wrapper {
+    min-width: 100em;
     flex-basis: 400em;
     flex-grow: 3;
     max-width: 200em;
